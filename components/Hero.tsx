@@ -19,19 +19,20 @@ export default function Hero() {
   return (
     <section id="home" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
       {/* Giant name headline */}
-      <div style={{ paddingTop: "clamp(60px, 10vw, 100px)", paddingLeft: "clamp(20px, 4vw, 40px)", paddingRight: "clamp(20px, 4vw, 40px)", overflow: "hidden" }}>
+      <div style={{ paddingTop: "clamp(56px, 9vw, 92px)", paddingBottom: "clamp(8px, 1.4vw, 16px)", paddingLeft: "clamp(12px, 2vw, 24px)", paddingRight: "clamp(12px, 2vw, 24px)", overflow: "hidden", textAlign: "center" }}>
         <h1
           ref={headlineRef}
           style={{
             fontFamily: "'Poppins', sans-serif",
             fontWeight: 900,
-            fontSize: "clamp(32px, 9.2vw, 150px)",
-            lineHeight: 0.9,
-            letterSpacing: "-0.015em",
+            fontSize: "clamp(30px, 7.8vw, 122px)",
+            lineHeight: 1.03,
+            letterSpacing: "-0.01em",
             textTransform: "uppercase",
             color: "var(--text)",
             willChange: "transform, opacity",
             whiteSpace: "nowrap",
+            display: "inline-block",
           }}
         >
           Hannah Tomasetti
@@ -60,9 +61,6 @@ export default function Hero() {
             style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
           />
-          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "Poppins" }}>
-            Photo
-          </div>
         </div>
 
         {/* Blurb */}
@@ -71,10 +69,10 @@ export default function Hero() {
             A little about me…
           </p>
           <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300 }}>
-            I am a digital designer that specializes in crafting brand experiences that feel effortless &amp; intuitive. My work experience spans across UX, brand strategy, visual identity &amp; marketing.
+            I am a digital designer that specializes in crafting immersive brand experiences. My work experience spans across UX design, brand strategy, visual identity &amp; digital marketing.
           </p>
           <div style={{ marginTop: "40px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            {["UX", "Brand Strategy", "Visual Identity", "Marketing"].map((tag) => (
+            {["UX Design", "Brand Strategy", "Visual Identity", "Digital Marketing"].map((tag) => (
               <span key={tag} className="tag">{tag}</span>
             ))}
           </div>

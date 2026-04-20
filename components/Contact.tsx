@@ -129,17 +129,19 @@ export default function Contact() {
       </div>
 
       {/* Giant footer name */}
-      <div style={{ overflow: "hidden", lineHeight: 0.85, paddingRight: "0.04em" }}>
+      <div style={{ overflow: "hidden", textAlign: "center", paddingLeft: "clamp(12px, 2vw, 24px)", paddingRight: "clamp(12px, 2vw, 24px)", paddingBottom: "clamp(8px, 1.4vw, 16px)" }}>
         <h2
           style={{
             fontFamily: "'Poppins', sans-serif",
             fontWeight: 900,
-            fontSize: "clamp(32px, 9vw, 170px)",
+            fontSize: "clamp(30px, 7.8vw, 122px)",
+            lineHeight: 1.03,
             textTransform: "uppercase",
-            letterSpacing: "-0.015em",
+            letterSpacing: "-0.01em",
             color: "var(--text)",
             whiteSpace: "nowrap",
             userSelect: "none",
+            display: "inline-block",
           }}
         >
           Hannah Tomasetti
