@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
+  const [heroImageFailed, setHeroImageFailed] = useState(false);
 
   useEffect(() => {
     const el = headlineRef.current;
@@ -58,9 +59,27 @@ export default function Hero() {
           <img
             src="/hannah-hero.jpg"
             alt="Hannah Tomasetti"
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+            style={{ width: "100%", height: "100%", objectFit: "cover", display: heroImageFailed ? "none" : "block" }}
+            onError={() => setHeroImageFailed(true)}
           />
+          {heroImageFailed && (
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "var(--text-muted)",
+                fontSize: "0.75rem",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                fontFamily: "Poppins",
+              }}
+            >
+              Photo unavailable
+            </div>
+          )}
         </div>
 
         {/* Blurb */}
