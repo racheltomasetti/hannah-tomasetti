@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section id="home" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
       {/* Giant name headline */}
-      <div style={{ paddingTop: "clamp(56px, 9vw, 92px)", paddingBottom: "clamp(32px, 5vw, 60px)", paddingLeft: "clamp(12px, 2vw, 24px)", paddingRight: "clamp(12px, 2vw, 24px)", overflow: "hidden", textAlign: "center" }}>
+      <div style={{ paddingTop: "clamp(80px, 9vw, 92px)", paddingBottom: "clamp(32px, 5vw, 60px)", paddingLeft: "clamp(12px, 2vw, 24px)", paddingRight: "clamp(12px, 2vw, 24px)", overflow: "hidden", textAlign: "center" }}>
         <h1
           ref={headlineRef}
           style={{
