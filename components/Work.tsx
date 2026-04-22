@@ -4,15 +4,15 @@ import { useState } from "react";
 import Link from "next/link";
 
 const projects = [
-  { id: 1, title: "The Grotto", category: "Experience Design", year: "2026", image: "/projects/the-grotto.jpg", href: "/work/the-grotto" },
-  { id: 2, title: "Terra by Ki", category: "UX/UI Design", year: "2026", image: "/projects/terra-by-ki.jpg", href: "/work/terra-by-ki" },
-  { id: 3, title: "Sisley Paris", category: "Digital Marketing", year: "2025", image: "/projects/sisley-paris.jpg", href: "/work/sisley-paris" },
-  { id: 4, title: "SKRAM", category: "Health & Wellness", year: "2025", image: "/projects/skram.jpg", href: "/work/skram" },
+  { id: 1, title: "The Grotto", category: "Experience Design", year: "2026", image: "/projects/the-grotto.jpg", href: "/work/the-grotto", yearTextLight: true },
+  { id: 2, title: "Terra by Ki", category: "UX/UI Design", year: "2026", image: "/projects/terra-by-ki.png", href: "/work/terra-by-ki", yearTextLight: true },
+  { id: 3, title: "Sisley Paris", category: "Digital Marketing", year: "2025", image: "/projects/sisley-paris.png", href: "/work/sisley-paris", yearTextLight: true },
+  { id: 4, title: "skram", category: "Health & Wellness", year: "2025", image: "/projects/skram.jpg", href: "/work/skram", yearTextLight: false },
 ];
 
 export default function Work() {
   return (
-    <section id="work" style={{ padding: "clamp(60px, 8vw, 120px) clamp(20px, 4vw, 40px)", borderTop: "1px solid var(--border)" }}>
+    <section id="work" style={{ padding: "clamp(40px, 5vw, 80px) clamp(20px, 4vw, 40px)" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "clamp(32px, 5vw, 60px)" }}>
         <Link href="/work" style={{ textDecoration: "none" }}>
           <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: "clamp(28px, 5vw, 56px)", letterSpacing: "-0.02em", textTransform: "uppercase", color: "var(--text)" }}>
@@ -25,7 +25,7 @@ export default function Work() {
       </div>
 
       <div className="work-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "2px" }}>
-        {projects.map((project) => (
+        {projects.filter((p) => !p.hidden).map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
@@ -56,8 +56,8 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
           {project.title}
         </span>
         <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
-          <span className="tag">{project.category}</span>
-          <span style={{ fontFamily: "Poppins", fontSize: "0.65rem", color: "var(--text-muted)" }}>{project.year}</span>
+          <span className="tag" style={{ background: "rgba(246,241,230,0.75)" }}>{project.category}</span>
+          <span style={{ fontFamily: "Poppins", fontSize: "0.65rem", color: project.yearTextLight ? "var(--text)" : "var(--bg)", textShadow: project.yearTextLight ? "0 1px 8px rgba(0,0,0,0.8)" : "none" }}>{project.year}</span>
         </div>
       </div>
 

@@ -66,4 +66,38 @@ body {
 }
 @media (max-width: 640px) {
   .project-content-row { grid-template-columns: 1fr !important; }
+  .project-spotlight-grid { grid-template-columns: 1fr !important; }
+}
+
+.overview-carousel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Day / night gallery: natural-height masonry (no empty grid cells on partial rows) */
+.day-night-gallery-masonry {
+  column-count: 3;
+  column-gap: 10px;
+}
+.day-night-gallery-masonry__item {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--border);
+  line-height: 0;
+}
+.day-night-gallery-masonry__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .day-night-gallery-masonry {
+    column-count: 2;
+  }
+}
+@media (max-width: 520px) {
+  .day-night-gallery-masonry {
+    column-count: 1;
+  }
 }

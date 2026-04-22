@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Work from "@/components/Work";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import KiFooter from "@/components/KiFooter";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Work />
       <About />
       <Contact />
+      <KiFooter />
     </main>
   );
 }

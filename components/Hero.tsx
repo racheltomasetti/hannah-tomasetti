@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section id="home" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
       {/* Giant name headline */}
-      <div style={{ paddingTop: "clamp(56px, 9vw, 92px)", paddingBottom: "clamp(8px, 1.4vw, 16px)", paddingLeft: "clamp(12px, 2vw, 24px)", paddingRight: "clamp(12px, 2vw, 24px)", overflow: "hidden", textAlign: "center" }}>
+      <div style={{ paddingTop: "clamp(56px, 9vw, 92px)", paddingBottom: "clamp(32px, 5vw, 60px)", paddingLeft: "clamp(12px, 2vw, 24px)", paddingRight: "clamp(12px, 2vw, 24px)", overflow: "hidden", textAlign: "center" }}>
         <h1
           ref={headlineRef}
           style={{
@@ -40,8 +40,6 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* Divider */}
-      <div style={{ height: "1px", background: "var(--border)", margin: "clamp(24px, 4vw, 40px) clamp(20px, 4vw, 40px)" }} />
 
       {/* Intro row */}
       <div
@@ -50,7 +48,7 @@ export default function Hero() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "40px",
-          padding: "0 clamp(20px, 4vw, 40px) clamp(60px, 8vw, 100px)",
+          padding: "0 clamp(20px, 4vw, 40px) clamp(40px, 5vw, 80px)",
           alignItems: "start",
         }}
       >
@@ -88,10 +86,16 @@ export default function Hero() {
             A little about me…
           </p>
           <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300 }}>
-            I am a digital designer that specializes in crafting immersive brand experiences. My work experience spans across UX design, brand strategy, visual identity &amp; digital marketing.
+            I am a digital designer specialized in crafting immersive brand experiences. From curating unique, in-person spaces to designing intuitive app interfaces, I love bringing ideas to life.
+          </p>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
+            Growing up, I was constantly creating— playing violin, taking dance and drawing classes, spending all of COVID quarantine upcycling clothes on my mom&apos;s sewing machine. What drew me to all of it was the same thing: a desire to bring something new to life and connect people.
+          </p>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
+            That instinct inspires every project I work on. I feel lucky to be building a career around something I have always loved… and I am only just getting started.
           </p>
           <div style={{ marginTop: "40px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            {["UX Design", "Brand Strategy", "Visual Identity", "Digital Marketing"].map((tag) => (
+            {["UX Design", "Brand Strategy", "Packaging Design", "Digital Marketing", "Graphic Design", "Research & Development", "Vibe Coding"].map((tag) => (
               <span key={tag} className="tag">{tag}</span>
             ))}
           </div>

@@ -5,8 +5,7 @@ export default function About() {
     <section
       id="about"
       style={{
-        padding: "clamp(60px, 8vw, 120px) clamp(20px, 4vw, 40px)",
-        borderTop: "1px solid var(--border)",
+        padding: "clamp(40px, 5vw, 80px) clamp(20px, 4vw, 40px)",
       }}
     >
       <div
@@ -35,19 +34,28 @@ export default function About() {
             <span style={{ fontStyle: "italic", fontFamily: "Merriweather" }}>Hannah…</span>
           </h2>
 
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, marginBottom: "20px" }}>
-            From diving into building a startup to working with established businesses, my main objective is to curate user experiences that feel intuitive. A core focus in my work process is bridging the gap between art &amp; the ever-evolving tech world.
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, marginBottom: "1.4em" }}>
+            From building a startup to supporting established brands, my focus has always been the same: creating user experiences that feel intentional and human. As I learn more about the ever-evolving world of technology, I have found a deep love for bridging the gap between art and tech.
           </p>
 
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text-muted)", fontWeight: 300 }}>
-            By leveraging my tech background from Syracuse University iSchool &amp; creative experience from Savannah College of Art &amp; Design… I create brand experiences &amp; campaigns that can connect with audiences both digitally &amp; in person.
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, marginBottom: "1.4em" }}>
+            My academic foundation draws from two distinct experiences. At the Savannah College of Art and Design, I developed my design process, learned to embrace critique, and led cross-functional projects from concept to execution. A year at Syracuse University introduced me to the technical side, where I picked up HTML and CSS. I have continued that education independently, exploring how AI can enhance and accelerate the creative process. I now build with tools like Cursor, Claude Code, and Vercel, bringing design thinking directly into development.
+          </p>
+
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300 }}>
+            Together, these experiences have shaped how I approach every project: with a clear creative vision, organized thinking, and a drive to execute.
           </p>
 
           <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "10px" }}>
-            {["Syracuse University iSchool", "Savannah College of Art & Design"].map((school) => (
-              <div key={school} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+            {[
+              { name: "Syracuse University iSchool", dates: "2020 - 2021" },
+              { name: "Savannah College of Art and Design", dates: "2022–2025" },
+            ].map(({ name, dates }) => (
+              <div key={name} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                 <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--text)", flexShrink: 0 }} />
-                <span style={{ fontFamily: "Poppins", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--text-muted)" }}>{school}</span>
+                <span style={{ fontFamily: "Poppins", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--text-muted)" }}>
+                  {name} <span style={{ color: "var(--text-muted)", opacity: 0.6 }}>({dates})</span>
+                </span>
               </div>
             ))}
           </div>
