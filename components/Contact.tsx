@@ -49,8 +49,8 @@ export default function Contact() {
         <h2
           style={{
             fontFamily: "'Poppins', sans-serif",
-            fontWeight: 700,
-            fontSize: "clamp(28px, 4vw, 48px)",
+            fontWeight: 600,
+            fontSize: "clamp(18px, 3vw, 32px)",
             letterSpacing: "-0.01em",
             color: "var(--text)",
             marginBottom: "36px",
