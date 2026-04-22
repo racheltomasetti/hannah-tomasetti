@@ -53,8 +53,8 @@ export default function DayNightGallery({ day, night, title }: Props) {
     <div>
       <h2
         style={{
-          fontFamily: "'Merriweather', serif",
-          fontWeight: 400,
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 900,
           fontSize: "clamp(2.25rem, 6vw, 3.75rem)",
           lineHeight: 1.15,
           letterSpacing: "-0.02em",
@@ -68,8 +68,8 @@ export default function DayNightGallery({ day, night, title }: Props) {
 
       <p
         style={{
-          fontFamily: "'Poppins', sans-serif",
-          fontWeight: 400,
+          fontFamily: "'Merriweather', serif",
+          fontWeight: 300,
           fontSize: "clamp(17px, 1.65vw, 20px)",
           lineHeight: 1.55,
           color: "var(--text-muted)",
