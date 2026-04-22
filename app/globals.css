@@ -60,6 +60,8 @@ body {
 @media (max-width: 768px) {
   .hero-grid { grid-template-columns: 1fr !important; }
   .about-grid { grid-template-columns: 1fr !important; }
+  .about-images { order: 2; }
+  .about-copy { order: 1; }
 }
 @media (max-width: 640px) {
   .work-grid { grid-template-columns: 1fr !important; }

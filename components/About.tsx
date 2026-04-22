@@ -18,7 +18,7 @@ export default function About() {
         className="about-grid"
       >
         {/* Left: photos stacked */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+        <div className="about-images" style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           <div style={{ background: "var(--border)", aspectRatio: "4/3", overflow: "hidden", position: "relative" }}>
             <img src="/about-1.jpg" alt="Hannah at work" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }} />
           </div>
@@ -28,7 +28,7 @@ export default function About() {
         </div>
 
         {/* Right: copy */}
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <div className="about-copy" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", letterSpacing: "-0.02em", color: "var(--text)", marginBottom: "clamp(20px, 3vw, 36px)" }}>
             Get to know<br />
             <span style={{ fontStyle: "italic", fontFamily: "Merriweather" }}>Hannah…</span>
