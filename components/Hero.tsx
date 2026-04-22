@@ -82,16 +82,16 @@ export default function Hero() {
 
         {/* Blurb */}
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", paddingTop: "20px" }}>
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", marginBottom: "16px", letterSpacing: "0.02em" }}>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", marginBottom: "16px", letterSpacing: "0.02em" }}>
             A little about me…
           </p>
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300 }}>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300 }}>
             I am a digital designer specialized in crafting immersive brand experiences. From curating unique, in-person spaces to designing intuitive app interfaces, I love bringing ideas to life.
           </p>
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
             Growing up, I was constantly creating— playing violin, taking dance and drawing classes, spending all of COVID quarantine upcycling clothes on my mom&apos;s sewing machine. What drew me to all of it was the same thing: a desire to bring something new to life and connect people.
           </p>
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
             That instinct inspires every project I work on. I feel lucky to be building a career around something I have always loved… and I am only just getting started.
           </p>
           <div style={{ marginTop: "40px", display: "flex", gap: "12px", flexWrap: "wrap" }}>

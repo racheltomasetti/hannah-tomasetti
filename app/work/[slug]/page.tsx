@@ -95,11 +95,11 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
           <>
             {divider}
             <div style={{ display: "grid", gridTemplateColumns: "clamp(100px, 18%, 200px) 1fr", gap: "clamp(20px, 4vw, 60px)", alignItems: "start" }} className="project-content-row">
-              <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
+              <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
                 Overview
               </p>
               <div>
-                <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
+                <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
                   {project.description}
                 </p>
                 {project.websiteUrl && (
@@ -158,7 +158,7 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
         {project.videosBelowOverview && project.videosBelowOverview.length > 0 && (
           <div style={{ marginTop: sectionGap }}>
             {(project.videosBelowOverviewTitle?.trim() ?? "") !== "" && (
-              <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", marginBottom: "clamp(20px, 3vw, 32px)" }}>
+              <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", marginBottom: "clamp(20px, 3vw, 32px)" }}>
                 {project.videosBelowOverviewTitle}
               </p>
             )}
@@ -218,7 +218,7 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
         {/* Inspiration — YouTube embeds */}
         {project.inspirationVideos && project.inspirationVideos.length > 0 && (
           <div style={{ marginTop: sectionGap, display: "grid", gridTemplateColumns: "clamp(100px, 18%, 200px) 1fr", gap: "clamp(20px, 4vw, 60px)", alignItems: "start" }} className="project-content-row">
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
               Inspiration
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "clamp(8px, 1.5vw, 16px)" }}>
@@ -253,7 +253,7 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
                 />
               </div>
               <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
+                <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
                   {project.spotlight.text}
                 </p>
               </div>
@@ -264,10 +264,10 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
         {/* Goals */}
         {project.goals && (
           <div style={{ marginTop: sectionGap, display: "grid", gridTemplateColumns: "clamp(100px, 18%, 200px) 1fr", gap: "clamp(20px, 4vw, 60px)", alignItems: "start" }} className="project-content-row">
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
               Project goals
             </p>
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
               {project.goals}
             </p>
           </div>
@@ -276,10 +276,10 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
         {/* Approach */}
         {project.approach && (
           <div style={{ marginTop: sectionGap, display: "grid", gridTemplateColumns: "clamp(100px, 18%, 200px) 1fr", gap: "clamp(20px, 4vw, 60px)", alignItems: "start" }} className="project-content-row">
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", paddingTop: "4px" }}>
               My approach
             </p>
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.4vw, 17px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, whiteSpace: "pre-line" }}>
               {project.approach}
             </p>
           </div>
@@ -288,7 +288,7 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
         {/* Mockups */}
         {project.mockups.length > 0 && (
           <div style={{ marginTop: sectionGap }}>
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", marginBottom: "clamp(20px, 3vw, 32px)" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", marginBottom: "clamp(20px, 3vw, 32px)" }}>
               Mockups
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -315,7 +315,7 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
         {/* Videos */}
         {project.videos.length > 0 && (
           <div style={{ marginTop: sectionGap }}>
-            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", marginBottom: "clamp(20px, 3vw, 32px)" }}>
+            <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em", marginBottom: "clamp(20px, 3vw, 32px)" }}>
               {project.videoSectionTitle ?? "Video"}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>

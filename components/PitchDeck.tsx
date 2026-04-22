@@ -19,7 +19,7 @@ export default function PitchDeck({ slides }: { slides: string[] }) {
   return (
     <div>
       <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "clamp(20px, 3vw, 32px)" }}>
-        <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em" }}>
+        <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", letterSpacing: "0.02em" }}>
           Process deck
         </p>
         <span style={{ fontFamily: "Poppins", fontSize: "0.7rem", color: "var(--text-muted)" }}>
