@@ -49,7 +49,7 @@ export default function Hero() {
           gridTemplateColumns: "1fr 1fr",
           gap: "40px",
           padding: "0 clamp(20px, 4vw, 40px) clamp(40px, 5vw, 80px)",
-          alignItems: "start",
+          alignItems: "stretch",
         }}
       >
         {/* Photo */}
