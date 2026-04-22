@@ -2,13 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { projects as allProjects } from "@/lib/projects";
 
-const projects = [
-  { id: 1, title: "The Grotto", category: "Experience Design", year: "2026", image: "/projects/the-grotto.jpg", href: "/work/the-grotto", yearTextLight: true },
-  { id: 2, title: "Terra by Ki", category: "UX/UI Design", year: "2026", image: "/projects/terra-by-ki.png", href: "/work/terra-by-ki", yearTextLight: true },
-  { id: 3, title: "Sisley Paris", category: "Digital Marketing", year: "2025", image: "/projects/sisley-paris.png", href: "/work/sisley-paris", yearTextLight: true },
-  { id: 4, title: "skram", category: "Health & Wellness", year: "2025", image: "/projects/skram.jpg", href: "/work/skram", yearTextLight: false },
-];
+const projects = allProjects.filter((p) => !p.hidden).slice(0, 4);
 
 export default function Work() {
   return (
@@ -25,8 +21,8 @@ export default function Work() {
       </div>
 
       <div className="work-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "2px" }}>
-        {projects.filter((p) => !p.hidden).map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {projects.map((project) => (
+          <ProjectCard key={project.slug} project={project} />
         ))}
       </div>
     </section>
@@ -38,13 +34,13 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
 
   return (
     <Link
-      href={project.href}
+      href={`/work/${project.slug}`}
       style={{ display: "block", position: "relative", textDecoration: "none", overflow: "hidden", background: "var(--border)", aspectRatio: "4/3", cursor: "pointer" }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <img
-        src={project.image}
+        src={project.coverImage}
         alt={project.title}
         style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)", transform: hovered ? "scale(1.04)" : "scale(1)" }}
         onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }}

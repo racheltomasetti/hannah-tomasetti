@@ -90,7 +90,6 @@ Lastly, the Captain's Handbook is a premium digital guest guide accessible via Q
       ],
       night: [
         "/projects/night/DSC_0307.JPG",
-        "/projects/night/DSC_0340.JPG",
         "/projects/night/DSC_0488.JPG",
         "/projects/night/IMG_1015.jpg",
         "/projects/night/IMG_1024.jpg",
@@ -189,7 +188,7 @@ From there, I developed cohesive branding aligned with an inclusive mission and 
 Throughout the final execution of skram, I led a cross-functional team spanning industrial design, graphic design, social strategy, photography, and film to bring the brand to life.`,
     },
     mockups: [],
-    videos: [],
+    videos: ["/projects/skram-video.mp4"],
     videoSectionTitle: "Brand Teaser",
     videoAbovePitchDeck: "/projects/MARKS to SKRAM 01_1.mp4",
     pitchDeck: [
@@ -244,7 +243,7 @@ Throughout the final execution of skram, I led a cross-functional team spanning 
       "7e-qe3RYXWw",
     ],
     mockups: [],
-    videos: [],
+    videos: ["/projects/DS%26DURGA-film.mp4"],
     videoSectionTitle: "Comfort in Chaos",
     pitchDeck: [
       "/projects/ds-durga-deck/01.png",
