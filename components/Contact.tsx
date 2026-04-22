@@ -56,7 +56,7 @@ export default function Contact() {
             marginBottom: "36px",
           }}
         >
-          connect for any work opportunities or collaborations:
+          Let's connect for any work opportunities or collaborations:
         </h2>
 
         <div style={{ display: "inline-flex", alignItems: "center", gap: "clamp(16px, 2.5vw, 32px)" }}>
