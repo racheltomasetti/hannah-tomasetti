@@ -81,7 +81,7 @@ export default function Hero() {
         </div>
 
         {/* Blurb */}
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", paddingTop: "20px" }}>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "20px" }}>
           <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", fontStyle: "italic", color: "var(--text-muted)", marginBottom: "16px", letterSpacing: "0.02em" }}>
             A little about me…
           </p>
