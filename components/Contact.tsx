@@ -7,26 +7,29 @@ const contactLinkStyle = {
   fontSize: "clamp(14px, 2.2vw, 22px)",
   color: "var(--text)",
   textDecoration: "none",
-  borderBottom: "2px solid var(--border)",
-  paddingBottom: "4px",
-  transition: "border-color 0.2s",
+  border: "1px solid var(--border)",
+  borderRadius: "999px",
+  padding: "clamp(8px, 1vw, 12px) clamp(20px, 2.5vw, 36px)",
+  transition: "background 0.2s, color 0.2s",
   display: "inline-block",
   lineHeight: 1.1,
 } as const;
 
-function underlineHoverHandlers() {
+function pillHoverHandlers() {
   return {
     onMouseEnter: (e: React.MouseEvent<HTMLElement>) => {
-      (e.currentTarget as HTMLElement).style.borderColor = "var(--text)";
+      (e.currentTarget as HTMLElement).style.background = "var(--text)";
+      (e.currentTarget as HTMLElement).style.color = "var(--bg)";
     },
     onMouseLeave: (e: React.MouseEvent<HTMLElement>) => {
-      (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
+      (e.currentTarget as HTMLElement).style.background = "transparent";
+      (e.currentTarget as HTMLElement).style.color = "var(--text)";
     },
   };
 }
 
 export default function Contact() {
-  const hover = underlineHoverHandlers();
+  const hover = pillHoverHandlers();
 
   return (
     <section
@@ -59,7 +62,7 @@ export default function Contact() {
           Let's connect for any work opportunities or collaborations:
         </h2>
 
-        <div style={{ display: "inline-flex", alignItems: "center", gap: "clamp(16px, 2.5vw, 32px)" }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: "clamp(12px, 2vw, 24px)", flexWrap: "wrap", justifyContent: "center" }}>
           <a href="mailto:hannaht1124@gmail.com" style={contactLinkStyle} {...hover}>
             hannaht1124@gmail.com
           </a>
