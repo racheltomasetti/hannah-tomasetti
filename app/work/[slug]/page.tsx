@@ -375,6 +375,20 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
           </div>
         )}
 
+        {/* Mock campaign footnote */}
+        {project.mockCampaign && (
+          <p style={{
+            fontFamily: "'Merriweather', serif",
+            fontStyle: "italic",
+            fontSize: "clamp(14px, 1.5vw, 18px)",
+            color: "var(--text-muted)",
+            textAlign: "center",
+            marginTop: sectionGap,
+          }}>
+            Mock brand campaign — SCAD
+          </p>
+        )}
+
       </div>
     </main>
   );

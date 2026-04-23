@@ -51,6 +51,8 @@ export type Project = {
   dayNightGallery?: { day: string[]; night: string[] };
   /** When true, hides the project from the work grid while keeping its page accessible. */
   hidden?: boolean;
+  /** When true, shows "Mock brand campaign — SCAD" footer note at the bottom of the project page. */
+  mockCampaign?: boolean;
 };
 
 export const projects: Project[] = [
@@ -153,6 +155,7 @@ To close out my time with the brand, I led a full Product Detail Page (PDP) audi
   },
   {
     slug: "skram",
+    mockCampaign: true,
     title: "skram",
     subtitle: "Senior Capstone — Skin healing redefined",
     category: "Health & Wellness",
@@ -226,6 +229,7 @@ Throughout the final execution of skram, I led a cross-functional team spanning 
   },
   {
     slug: "ds-durga",
+    mockCampaign: true,
     title: "DS & DURGA",
     subtitle: "Cowgirl & Cowboy Grass Film — Comfort in Chaos",
     category: "Brand Film",
@@ -276,6 +280,7 @@ Throughout the final execution of skram, I led a cross-functional team spanning 
   },
   {
     slug: "thin-wild-mercury",
+    mockCampaign: true,
     title: "Thin Wild Mercury",
     subtitle: "Instagram Carousel Campaign — Signature Collections",
     category: "Advertising",
@@ -360,6 +365,7 @@ Throughout the final execution of skram, I led a cross-functional team spanning 
   },
   {
     slug: "absolute",
+    mockCampaign: true,
     title: "Absolute",
     subtitle: "Future of Beauty Care",
     category: "Research & Development",
@@ -406,6 +412,7 @@ This project involves industry research, product development, pricing strategy, 
   },
   {
     slug: "mara-beauty",
+    mockCampaign: true,
     title: "Mara Beauty",
     subtitle: "Global Market Expansion — Vietnam",
     category: "Global Expansion",
@@ -442,6 +449,7 @@ This project involves industry research, product development, pricing strategy, 
   },
   {
     slug: "byredo",
+    mockCampaign: true,
     title: "BYREDO",
     subtitle: "Fragrance Launch",
     category: "Fragrance",
@@ -469,6 +477,7 @@ In my Visual Communication for Consumer Engagement class, I had the opportunity 
   },
   {
     slug: "elf-cosmetics",
+    mockCampaign: true,
     title: "E.L.F. Cosmetics",
     subtitle: "Fashion Scholarship Fund — Group Project",
     category: "FSF Project",
@@ -544,6 +553,7 @@ Jenny Holzer`,
   },
   {
     slug: "supergoop-x-red-bull",
+    mockCampaign: true,
     title: "Supergoop! x Red Bull",
     subtitle: "Brand Collaboration",
     category: "Packaging Design",
