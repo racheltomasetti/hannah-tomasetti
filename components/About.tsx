@@ -20,10 +20,10 @@ export default function About() {
         {/* Left: photos stacked */}
         <div className="about-images" style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
           <div style={{ background: "var(--border)", aspectRatio: "4/3", overflow: "hidden", position: "relative" }}>
-            <img src="/about-1.jpg" alt="Hannah at work" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }} />
+            <img src="/about-2.jpg" alt="Hannah at work" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }} />
           </div>
           <div style={{ background: "var(--border)", aspectRatio: "4/3", overflow: "hidden", position: "relative" }}>
-            <img src="/about-2.jpg" alt="Hannah working" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }} />
+            <img src="/about-1.jpg" alt="Hannah working" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={(e) => { (e.target as HTMLImageElement).style.opacity = "0"; }} />
           </div>
         </div>
 
