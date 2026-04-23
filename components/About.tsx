@@ -42,10 +42,6 @@ export default function About() {
             My academic foundation draws from two distinct experiences. At the Savannah College of Art and Design, I developed my design process, learned to embrace critique, and led cross-functional projects from concept to execution. A year at Syracuse University introduced me to the technical side, where I picked up HTML and CSS. I have continued that education independently, exploring how AI can enhance and accelerate the creative process. I now build with tools like Cursor, Claude Code, and Vercel, bringing design thinking directly into development.
           </p>
 
-          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300 }}>
-            Together, these experiences have shaped how I approach every project: with a clear creative vision, organized thinking, and a drive to execute.
-          </p>
-
           <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "10px" }}>
             {[
               { name: "Syracuse University iSchool", dates: "2020 - 2021" },
